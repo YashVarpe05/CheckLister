@@ -1,0 +1,173 @@
+/* root properties */
+:root {
+	--body-font: "Figtree", sans-serif;
+
+	--color-body: #e8f3f8;
+	--color-header: #061b25;
+	--color-text: var(var(--color-header));
+	--color-input: #082937;
+	--color-input-lighter: #0b374a;
+	--color-secondary: #ff8c42;
+	--color-secondary-darker: #cc7035;
+	--color-tertiary: #1c89bb;
+	--color-text-badge: #e8f3f8;
+	--color-disabled: #d2e7f1;
+	--color-text-disabled: #77b8d4;
+
+	--global-border-radius: 6px;
+	--global-transition: all 0.5s ease-in-out;
+}
+
+/* general styles */
+
+html {
+	font-size: 18px;
+}
+body {
+	font-family: var(--body-font);
+	background-color: var(--color-body);
+	color: var(--color-text);
+}
+.container {
+	padding: 0 1.5rem;
+}
+
+button,
+input[type="checkbox"] {
+	cursor: pointer;
+}
+ol,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	color: white;
+	margin-bottom: 0 0 2rem;
+}
+
+a {
+	color: var(--color-text);
+	transition: var(--global-transition);
+}
+a:hover {
+	color: var(--color-secondary);
+}
+
+/* form  */
+
+#todo-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#todo-form input {
+	background-color: var(--color-input);
+	border: 0;
+	padding: 1rem;
+	border-radius: var(--global-border-radius);
+	outline: 0;
+	color: white;
+}
+#todo-form input:hover,
+#todo-form input:focus {
+	background-color: var(--color-input-lighter);
+}
+
+#todo-form input {
+	background-color: var(--color-input);
+}
+
+#todo-form inpur::placeholder {
+	color: var(--color-text-muted);
+}
+
+#todo-form button {
+	border: 0;
+	padding: 1rem;
+	border-radius: var(--global-border-radius);
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	background-color: var(--color-secondary);
+}
+#todo-form button:hover {
+	background-color: var(--color-secondary-darker);
+}
+#todo-form button:active {
+	background-color: var(--color-secondary-darker);
+}
+
+#todo-form button,
+#todo-form input {
+	transition: var(--global-transition);
+}
+
+small,
+#todo-form button,
+.stats span {
+	font-size: 0.75rem;
+}
+
+/* Header */
+
+#main-header {
+	background-color: var(--color-header);
+	padding: 3rem 0;
+	margin-bottom: 2rem;
+}
+
+/* Stats */
+
+.stats {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.stats li {
+	display: flex;
+}
+.stats span {
+	padding: 0.25rem 0.5rem;
+}
+
+.stats span:first-child {
+	background-color: var(--color-header);
+	color: var(--color-text-muted);
+	border-radius: var(--global-border-radius) var(--global-border-radius);
+	font-weight: 700;
+}
+
+/* To do list  */
+
+/* media quire */
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 30rem;
+		margin: 0 auto;
+		position: relative;
+	}
+	#todo-form {
+		flex-direction: row;
+	}
+	#todo-form input {
+		flex-grow: 1;
+	}
+}
+
+/* 1024 and above  */
+
+@media screen and (min-width: 1024px) {
+	.stats {
+		flex-direction: column;
+		align-items: flex-end;
+		position: absolute;
+		top: 0;
+		transform: translateX(-100%);
+		padding-right: 4rem;
+	}
+}

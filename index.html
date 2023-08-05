@@ -10,16 +10,35 @@
 		<title>CheckLister</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Cdn File -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,700;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- main css file link -->
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<!--[if lt IE 7]>
-			<p class="browsehappy">
-				You are using an <strong>outdated</strong> browser. Please
-				<a href="#">upgrade your browser</a> to improve your experience.
-			</p>
-		<![endif]-->
-
+		<header id="main-header">
+			<div class="container">
+				<h1>Today</h1>
+				<form action="" id="todo-form">
+					<input
+						type="text"
+						name="task-name"
+						placeholder="e.g. Make Report "
+						autofocus
+					/>
+				</form>
+			</div>
+		</header>
 		<script src="./script.js" async defer></script>
 	</body>
 </html>
