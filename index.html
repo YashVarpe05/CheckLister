@@ -36,9 +36,92 @@
 						placeholder="e.g. Make Report "
 						autofocus
 					/>
+					<button type="submit">Add task</button>
 				</form>
 			</div>
 		</header>
+		<section>
+			<div class="container" id="main-content">
+				<ul class="stats">
+					<li>
+						<span>Remaining</span>
+						<span id="remaining-tasks">0</span>
+					</li>
+
+					<li>
+						<span>Completed</span>
+						<span id="completed-tasks">0</span>
+					</li>
+					<li>
+						<span>Total</span>
+						<span id="total-tasks">0</span>
+					</li>
+				</ul>
+
+				<ul class="todos">
+					<li>
+						<div>
+							<input type="checkbox" name="task" id="1" />
+							<span>Task 1</span>
+						</div>
+						<button title="Remove task" class="remove-task">
+							<svg viewBox="0 0 24 24" fill="none">
+								<path
+									d="M17.25 17.25L6.75 6.75"
+									stroke="#a4d0e3"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M17.25 6.75L6.75 17.25"
+									stroke="#a4doe3"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</li>
+					<li>
+						<div>
+							<input type="checkbox" name="task" id="2" />
+							<span>Task 2</span>
+						</div>
+						<button title="Remove task" class="remove-task">
+							<svg viewBox="0 0 24 24" fill="none">
+								<path
+									d="M17.25 17.25L6.75 6.75"
+									stroke="#a4d0e3"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M17.25 6.75L6.75 17.25"
+									stroke="#a4doe3"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<p>
+					<small>
+						Design & Code by
+						<a href="https://github.com/YashVarpe05" target="_blank"
+							>Yash Varpe
+						</a>
+					</small>
+				</p>
+			</div>
+		</footer>
 		<script src="./script.js" async defer></script>
 	</body>
 </html>

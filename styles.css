@@ -5,10 +5,14 @@
 	--color-body: #e8f3f8;
 	--color-header: #061b25;
 	--color-text: var(var(--color-header));
+	--color-text-muted: #a4d0e3;
+
 	--color-input: #082937;
 	--color-input-lighter: #0b374a;
 	--color-secondary: #ff8c42;
 	--color-secondary-darker: #cc7035;
+	--color-secondary-lighter: #ffa368;
+
 	--color-tertiary: #1c89bb;
 	--color-text-badge: #e8f3f8;
 	--color-disabled: #d2e7f1;
