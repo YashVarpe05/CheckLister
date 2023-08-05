@@ -146,6 +146,94 @@ small,
 }
 
 /* To do list  */
+.todos {
+	margin-bottom: 4rem;
+}
+.todos li {
+	background-color: white;
+	border-radius: var(--global-border-radius);
+	margin-bottom: 1rem;
+	padding: 1.5rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.todos li div {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+.todos li.complete {
+	background-color: var(--color-disabled);
+	text-decoration: line-through;
+	color: var(--color-text-disabled);
+}
+
+input[type="checkbox"] {
+	appearance: none;
+	background-color: transparent;
+	margin: 0;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 2px solid var(--color-header);
+	border-radius: 100%;
+	display: grid;
+	place-content: center;
+	transition: var(--global-transition);
+}
+input[type="checkbox"]::before {
+	content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC5SURBVDiNpdA9agJBGAbgR5AV0ohtDuAJrIJgZaVgytxCO0sbuzTmBMFaL2FnaW0p2IS0KcTfwl0YZNHM+sI0H/N88zI8mVIB84oudpjG4jZ+ccY4FvdxKIqHKTzjOxZ/BniBJO9SgnrOfBDgH9cPzM0ce4xQTmfvOKb4hM69mrPgpSU+8BfMJvcw1LAJQHhWqDxaAK2gcnYOaPwHZ/m6WfCw+m1esE7xFtXYBfDmWr1XBGdpPoOjcgHhzTOVyF3nEQAAAABJRU5ErkJggg==");
+	transform: scale(0);
+	transition: var(--global-transition);
+}
+
+input[type="checkbox"]:checked {
+	background-color: var(--color-text-disabled);
+	border-color: var(--color-text-disabled);
+}
+input[type="checkbox"]:checked::before {
+	transform: scale(1);
+	border-color: var(--color-text-disabled);
+}
+
+.todos li button {
+	border: 0;
+	padding: 0.25rem;
+	display: grid;
+	place-content: center;
+	background-color: transparent;
+}
+.todos li button svg {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.todos li button svg path {
+	transition: var(--global-transition);
+}
+
+.todos li button:hover svg path {
+	stroke: var(--color-text);
+}
+.todos li button:active svg {
+	transform: scale(0.8);
+}
+
+.todos li span {
+	padding: 2px;
+	border-radius: var(--global-border-radius);
+	transition: all 0.2s ease-in-out;
+}
+
+.todos li span:focus {
+	background-color: var(--color-body);
+	outline: none;
+}
+
+.todos li span[contenteditable]:hover {
+	background-color: var(--color-body);
+}
 
 /* media quire */
 
