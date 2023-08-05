@@ -116,6 +116,12 @@ small,
 }
 
 /* Header */
+.logo {
+	width: 100px;
+	height: auto;
+	display: block; /* Ensure the image takes up its own space */
+	margin: 0 auto 1rem; /* Center the image horizontally and add some margin at the bottom */
+}
 
 #main-header {
 	background-color: var(--color-header);
