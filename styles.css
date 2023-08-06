@@ -241,6 +241,12 @@ input[type="checkbox"]:checked::before {
 	background-color: var(--color-body);
 }
 
+footer .container p small {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 /* media quire */
 
 @media screen and (min-width: 768px) {
