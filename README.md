@@ -41,8 +41,7 @@ CheckLister is a simple and interactive web application that allows you to creat
 
 We've also developed a mobile app version of CheckLister for your convenience. You can download the APK file from the link below:
 
-[In Progress]
-[Download CheckLister APK](https://example.com/checklister.apk)
+[Download CheckLister APK](https://github.com/YashVarpe05/CheckLister/blob/main/app-release.apk)
 
 ## Dependencies
 
